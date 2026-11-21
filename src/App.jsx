@@ -7,7 +7,7 @@ import {
 } from 'lucide-react';
 import { INITIAL_TASKS } from './data/sampleTasks';
 import { useLocalStorage } from './hooks/useLocalStorage';
-import Sidebar from './components/SideBar';
+import SideBar from './components/SideBar';
 import Header from './components/Header';
 import StatCard from './components/StatCard';
 import FocusNotes from './components/FocusNotes';
@@ -135,7 +135,7 @@ export default function App() {
 
   return (
     <div className="app-shell">
-      <Sidebar
+      <SideBar
         activeStatus={statusFilter}
         onSelectStatus={setStatusFilter}
         isOpen={isSidebarOpen}
